@@ -30,6 +30,42 @@ This project solves that by creating a small CDP-style system.
 6. Measures campaign results such as open rate, click rate, conversion rate, revenue, and ROI.
 7. Displays insights in a Streamlit dashboard.
 
+## System Architecture
+
+```mermaid
+flowchart TD
+    A[Customer Activity<br/>Website / App / Store] --> B[Event Data Generator]
+
+    B --> C[Raw Event Store<br/>events.csv]
+    B --> D[Customer Data<br/>customers.csv]
+
+    C --> E[Customer 360 Profile Builder]
+    D --> E
+
+    E --> F[Customer Profiles<br/>customer_profiles.csv]
+
+    F --> G[Audience Segmentation Engine]
+
+    G --> H1[High Value Members]
+    G --> H2[Cart Abandoners]
+    G --> H3[Dormant Members]
+    G --> H4[New Customers]
+
+    H1 --> I[Campaign Orchestrator]
+    H2 --> I
+    H3 --> I
+    H4 --> I
+
+    I --> J[Triggered Campaigns<br/>Welcome / Cart Recovery / Win-back / Loyalty Booster]
+
+    J --> K[Campaign Simulation Engine]
+
+    K --> L[Campaign Results<br/>campaign_results.csv]
+
+    L --> M[Marketing Analytics Dashboard<br/>Streamlit / Power BI]
+
+    M --> N[Business Insights<br/>Open Rate / CTR / Conversion / Revenue / ROI]
+```
 ## Martech Concepts Used
 
 * Customer Data Platform
