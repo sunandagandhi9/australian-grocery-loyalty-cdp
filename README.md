@@ -88,8 +88,11 @@ The project generates CSV files for:
 * campaigns
 * campaign results
 
-These can also be connected to Power BI or Tableau.
+### Interface
 
+![Campaign Performance](screenshots/campaign_performance.png)
+![Segments](screenshots/segments.png)
+![Customer 360](screenshots/customer360.png)
 ## Why This Project Matters
 
 This project demonstrates how data engineering and marketing logic work together in real Martech systems.
