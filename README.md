@@ -1,3 +1,4 @@
+ HEAD
 # Australian Grocery Loyalty CDP & Campaign Orchestrator
 
 A recruiter-friendly Martech portfolio project inspired by Australian grocery loyalty programs.
@@ -120,3 +121,6 @@ Built an Australian grocery loyalty CDP simulator using Python, pandas, and Stre
 ## Disclaimer
 
 This project is inspired by common Australian grocery loyalty concepts. It is not affiliated with Woolworths Group, Everyday Rewards, or any real retailer.
+
+# australian-grocery-loyalty-cdp
+
