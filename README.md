@@ -1,4 +1,4 @@
-# Australian Grocery Loyalty CDP & Campaign Orchestrator
+# Australian Grocery Loyalty CDP 
 
 This project is a synthetic Australian grocery loyalty Customer Data Platform (CDP) simulation.
 
