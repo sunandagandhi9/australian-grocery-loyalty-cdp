@@ -1,126 +1,99 @@
- HEAD
 # Australian Grocery Loyalty CDP & Campaign Orchestrator
 
-A recruiter-friendly Martech portfolio project inspired by Australian grocery loyalty programs.
+This project is a synthetic Australian grocery loyalty Customer Data Platform (CDP) simulation.
 
-> This project uses fully synthetic data. It does not use real Woolworths, Everyday Rewards, or customer data.
+It shows how a retail company can collect customer events, build customer profiles, create marketing segments, trigger campaigns, and measure campaign performance.
+
+No real customer data is used. All data is generated for learning and portfolio purposes.
 
 ## Business Problem
 
-Australian grocery retailers collect large volumes of customer behaviour data across online delivery, click & collect, and in-store shopping. Marketing teams need to convert this data into useful customer profiles, loyalty segments, personalised campaigns, and measurable campaign outcomes.
+Grocery retailers collect many customer interactions across websites, apps, stores, loyalty cards, and email campaigns.
 
-This project simulates how a Customer Data Platform (CDP) and campaign orchestration layer can support loyalty marketing.
+Marketing teams need to answer:
+
+* Who are our best customers?
+* Which customers are likely to stop shopping?
+* Who abandoned their cart?
+* Which campaign generated the most revenue?
+* Which customer segment should receive which offer?
+
+This project solves that by creating a small CDP-style system.
 
 ## What This Project Does
 
-1. Generates synthetic Australian grocery loyalty customers.
-2. Simulates ecommerce and grocery shopping events.
+1. Generates synthetic Australian grocery customer data.
+2. Creates customer events such as product views, cart additions, purchases, email opens, and email clicks.
 3. Builds Customer 360 profiles.
-4. Creates rule-based audience segments.
-5. Triggers personalised loyalty campaigns.
-6. Simulates campaign outcomes such as opens, clicks, conversions, revenue, and ROI.
-7. Displays results in a Streamlit dashboard.
+4. Creates customer segments such as VIP customers, dormant members, and cart abandoners.
+5. Simulates triggered marketing campaigns.
+6. Measures campaign results such as open rate, click rate, conversion rate, revenue, and ROI.
+7. Displays insights in a Streamlit dashboard.
 
-## Martech Concepts Demonstrated
+## Martech Concepts Used
 
-- Event tracking
-- Customer Data Platform logic
-- Customer 360 profile building
-- Identity fields: customer ID and anonymous ID
-- Loyalty tiers
-- Audience segmentation
-- Triggered campaign journeys
-- Campaign analytics
-- Revenue and ROI reporting
+* Customer Data Platform
+* Event tracking
+* Customer 360 profiles
+* Audience segmentation
+* Loyalty marketing
+* Campaign automation
+* Email performance analytics
+* Marketing ROI
 
-## Project Structure
+## Tech Stack
 
-```text
-.
-├── data/
-├── src/
-│   ├── config.py
-│   ├── data_generator.py
-│   ├── profile_builder.py
-│   ├── segmentation.py
-│   ├── campaign_engine.py
-│   └── main.py
-├── streamlit_app.py
-├── requirements.txt
-└── README.md
-```
+* Python
+* pandas
+* NumPy
+* Streamlit
+* Plotly
+* CSV data exports
 
 ## How to Run
 
-### 1. Clone or download the project
-
-```bash
-cd australian_grocery_loyalty_cdp
-```
-
-### 2. Create a virtual environment
-
-Mac/Linux:
+Create a virtual environment:
 
 ```bash
 python -m venv venv
 source venv/bin/activate
 ```
 
-Windows:
-
-```bash
-python -m venv venv
-venv\Scripts\activate
-```
-
-### 3. Install dependencies
+Install dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Run the data pipeline
+Run the data pipeline:
 
 ```bash
 python -m src.main
 ```
 
-This creates CSV files inside the `data/` folder.
-
-### 5. Launch the dashboard
+Launch dashboard:
 
 ```bash
 streamlit run streamlit_app.py
 ```
 
-## Campaigns Included
+## Output Files
 
-| Segment | Triggered Campaign |
-|---|---|
-| New Prospect | Welcome Booster |
-| Cart Abandoner | Cart Recovery |
-| Fresh Produce Buyer | Fresh Produce Offer |
-| Dormant Loyalty Member | Dormant Member Winback |
-| High Value Loyalty Member | High Value Rewards |
-| Online Delivery Shopper | Weekly Shop Booster |
+The project generates CSV files for:
 
-## Example Business Questions Answered
+* customers
+* events
+* customer profiles
+* segments
+* campaigns
+* campaign results
 
-- Which loyalty segments are largest?
-- Which campaigns generate the most revenue?
-- Which campaign has the highest conversion rate?
-- How do customer behaviours differ across loyalty tiers?
-- Which states have the strongest loyalty customer base?
-- Which shopping modes generate the most revenue?
+These can also be connected to Power BI or Tableau.
 
-## Resume Bullet
+## Why This Project Matters
 
-Built an Australian grocery loyalty CDP simulator using Python, pandas, and Streamlit to generate synthetic event-level customer data, create Customer 360 profiles, segment loyalty audiences, trigger personalised campaigns, and measure campaign ROI through an interactive dashboard.
+This project demonstrates how data engineering and marketing logic work together in real Martech systems.
 
-## Disclaimer
+It is inspired by Australian grocery loyalty programs and shows how customer data can be transformed into personalised campaigns and business insights.
 
-This project is inspired by common Australian grocery loyalty concepts. It is not affiliated with Woolworths Group, Everyday Rewards, or any real retailer.
-
-# australian-grocery-loyalty-cdp
 
